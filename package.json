@@ -1,0 +1,23 @@
+{
+  "name": "gaframe",
+  "version": "0.1.0",
+  "description": "A simple demo displaying Google Analytics Realtime API results in A-Frame.",
+  "main": "vr.js",
+  "dependencies": {
+    "aframe": "^0.1.1"
+  },
+  "devDependencies": {
+		"eslint-plugin-html": "^1.1.0",
+		"eslint-plugin-react": "^3.13.0"
+	},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "a-frame",
+    "google-analytics",
+    "webvr"
+  ],
+  "author": "Matt Policastro",
+  "license": "ISC"
+}
