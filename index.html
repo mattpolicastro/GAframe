@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GAframe</title>
+  <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+	<script>
+  (function(w,d,s,g,js,fjs){
+		g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
+		js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
+		js.src='https://apis.google.com/js/platform.js';
+  	fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
+  }(window,document,'script'));
+  </script>
+  <script src="./rt.js"></script>
+  <script src="./vr.js"></script>
+</head>
+<body>
+
+<style>
+.ui-chrome { position: relative; z-index: 999998 }
+</style>
+
+<section id="ga-auth" class="ui-chrome"></section>
+<section id="ga-view-selector" class="ui-chrome"></section>
+<a-scene>
+	<a-sky color="#444"></a-sky>
+	<a-camera position="0 1.8 4" cursor-fuse="true">
+		<!-- <a-entity cursor="fuse: true; timeout: 500"
+							position="0 0 -2"
+							geometry="primitive: ring"
+							material="color: white; shader: flat"
+		</a-entity> -->
+	</a-camera>
+
+	<a-entity position="0 1 2">
+		<a-cube position="0 0 5" height=".5" depth=".5" width=".5"></a-cube>
+		<a-animation attribute="rotation" to="0 360 0" dur="10000" repeat="indefinite" easing="ease-in"></a-animation>
+	</a-entity>
+</a-scene>
+
+</body>
+</html>
