@@ -9,10 +9,13 @@
     "react-dom": "^0.14.4"
   },
   "devDependencies": {
+    "babelify": "^7.2.0",
+		"babel-preset-react":"^6.3.13",
     "eslint-plugin-html": "^1.1.0",
     "eslint-plugin-react": "^3.13.0"
   },
   "scripts": {
+		"build": "browserify src/index.js -t [ babelify ] -o lib/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
