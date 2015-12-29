@@ -3,7 +3,6 @@ node_modules
 
 # Ignore config files (API keys, etc.)
 .config.js
-.eslintrc
 
 # Ignore debug/logs
 npm-debug.log
