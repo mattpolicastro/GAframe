@@ -1,5 +1,6 @@
-/*global gapi*/
-import CLIENT_ID from './config.js';
+/* global gapi */
+import CLIENT_ID from './.config.js';
+import './rt.js';
 
 gapi.analytics.ready(function() {
 

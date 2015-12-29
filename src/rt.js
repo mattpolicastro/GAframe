@@ -1,6 +1,7 @@
 /* global gapi */
-
 'use strict';
+import ReactDOM from 'react-dom';
+
 gapi.analytics.ready(function () {
 	gapi.analytics.createComponent('RealTime', {
 		initialize: function() {
