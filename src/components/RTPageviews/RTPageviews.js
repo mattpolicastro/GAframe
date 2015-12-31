@@ -1,6 +1,7 @@
 /* global gapi */
 'use strict';
 import ReactDOM from 'react-dom';
+import './RTPageviews.jsx';
 
 gapi.analytics.ready(function () {
 	gapi.analytics.createComponent('RealTime', {
