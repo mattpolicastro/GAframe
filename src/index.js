@@ -1,4 +1,5 @@
 /* global gapi */
+'use strict';
 import { CLIENT_ID } from '../config.js';
 import './components/components_index.js';
 
