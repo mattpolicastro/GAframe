@@ -1,5 +1,6 @@
 /* global gapi */
 import { CLIENT_ID } from '../config.js';
+import './components/components_index.js';
 
 gapi.analytics.ready(function() {
 
