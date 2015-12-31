@@ -4,6 +4,7 @@ build
 
 # Ignore config files (API keys, etc.)
 .config.js
+config.js
 
 # Ignore debug/logs
 npm-debug.log
