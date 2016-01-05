@@ -20,7 +20,12 @@ gapi.analytics.ready(function () {
 			} else {
 				gapi.analytics.auth.once('signIn', this._pollActiveUsers.bind(this));
 			}
-
+			// This is very bad and I don't like it at all but it works for now
+			let aframe = document.body.getElementsByTagName('a-scene')[0];
+			aframe.addEventListener('animationend', function() {
+				let gaBlock = event.target.parentNode.parentNode;
+				gaBlock.parentNode.removeChild(gaBlock);
+			});
 		},
 
 		stop: function() {
