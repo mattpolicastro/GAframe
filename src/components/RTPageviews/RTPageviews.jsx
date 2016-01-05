@@ -72,7 +72,7 @@ gapi.analytics.ready(function () {
 				console.log(this.get().baseline);
 			}
 			console.log('pageviews: ', pageviews);
-			let aFrame = document.body.getElementsByTagName('a-scene')[0];
+			let aframe = document.body.getElementsByTagName('a-scene')[0];
 			let gaBlock = document.createElement('a-entity');
 
 			/*
@@ -83,7 +83,7 @@ gapi.analytics.ready(function () {
 			and other triggers.
 			*/
 			ReactDOM.render(<RTPageviews key={pageviews} height={pageviews} />, gaBlock);
-			aFrame.appendChild(gaBlock);
+			aframe.appendChild(gaBlock);
 		},
 
 		_handleSignOut: function() {
