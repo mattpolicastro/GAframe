@@ -1,2 +1,2 @@
 'use strict';
-import './RTPageviews/RTPageviews.js';
+import './RTPageviews/RTPageviews.jsx';
