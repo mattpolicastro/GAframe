@@ -102,6 +102,7 @@ function RTPageviews(props) {
 		<a-entity
 			geometry={geom}
 			key={new Date()}
+			material="color: #f7991c"
 		>
 			<a-animation
 				attribute="position"
