@@ -75,6 +75,13 @@ gapi.analytics.ready(function () {
 			let aFrame = document.body.getElementsByTagName('a-scene')[0];
 			let gaBlock = document.createElement('a-entity');
 
+			/*
+			The stateless function/React component is basically using a wrapper;
+			something I'd like to avoid in the future. It may make sense to make a
+			stateful, React component in the scene that also functions as an Aframe
+			entity. This would ideally help event handling for Aframe's 'animationend'
+			and other triggers.
+			*/
 			ReactDOM.render(<RTPageviews key={pageviews} height={pageviews} />, gaBlock);
 			aFrame.appendChild(gaBlock);
 		},
