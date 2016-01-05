@@ -17,10 +17,10 @@ gapi.analytics.ready(function () {
 
 			if (gapi.analytics.auth.isAuthorized()) {
 				this._pollActiveUsers();
-			}
-			else {
+			} else {
 				gapi.analytics.auth.once('signIn', this._pollActiveUsers.bind(this));
 			}
+
 		},
 
 		stop: function() {
