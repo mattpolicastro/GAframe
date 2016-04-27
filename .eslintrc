@@ -1,4 +1,13 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "modules": true
+    },
+  },
   "rules": {
     "indent": [ "error", 2 ],
     "quotes": [ 2, "single" ],
@@ -7,16 +16,11 @@
     "no-console": 0,
   },
   "env": {
-    "browser": true
+    "browser": true,
     "es6": true,
     "node": true
   },
   "extends": "eslint:recommended",
-  "ecmaFeatures": {
-    "jsx": true,
-    "experimentalObjectRestSpread": true,
-    "modules": true
-  },
   "plugins": [
     "react",
     "html"

@@ -31,8 +31,6 @@ Once it's running, you'll have a barebones auth flow and some ugly VR. Congrats!
 
 # Next Steps
 
-* Move everything to proper npm modules.
-	* Wait to hear back about [Aframe #347](https://github.com/aframevr/aframe/issues/347), or submit PR to fix dependency inclusion/exclusion.
 * Refactor entity creation:
 	* Integrate React as a Google Embed API component?
 	* Wait for Aframe templates to be rebuilt.
